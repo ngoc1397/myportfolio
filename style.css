@@ -1,0 +1,257 @@
+:root {
+    font-size: 18px;
+    --main-color: #dab200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* nav bar css */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar.holder {
+    background-color: var(--main-color);
+    transition: all 0.25s ease-in;
+}
+
+.navbar.holder .nav-menu li a:hover {
+    color: white;
+}
+
+.nav-logo {
+    font-style: italic;
+    font-size: 1.2rem;
+    background: white;
+    border-radius: 12px;
+    padding: 5px;
+    color: rgb(20, 20, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar .wrapper {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    font-size: 1.2rem;
+}
+
+.nav-menu li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu li a:hover {
+    color: var(--main-color);
+    transition: all 0.1s ease-in;
+}
+
+.nav-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: none;
+}
+
+
+/* responsive for navbar */
+
+@media(max-width:900px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: -100%;
+        background: #002222;
+        padding-top: 80px;
+        z-index: 11;
+        transition: all 0.25s linear;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .navbar .nav-icon {
+        display: block;
+    }
+    .navbar .nav-menu li {
+        display: block;
+    }
+    .navbar .nav-menu li a {
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 1.5rem;
+    }
+}
+
+.home {
+    height: 100vh;
+    background: url('./img/background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.home .wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home-content .txt1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+    z-index: 1;
+}
+
+.home-content .txt2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    z-index: 1;
+}
+
+.home-content .txt3 {
+    font-size: 2.4rem;
+    z-index: 1;
+    margin-bottom: 0.6rem;
+}
+
+.home-content .txt3 :nth-child(2) {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+/* css for about section */
+
+.about {
+    padding: 30px 0px;
+}
+
+.about .about-header {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.about .about-header> :nth-child(1) {
+    font-size: 3rem;
+}
+
+.about .about-header> :nth-child(2) {
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.about .about-header> :nth-child(2) span {
+    color: var(--main-color);
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.about .about-header> :nth-child(2):after {
+    width: 200px;
+    height: 1px;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    background-color: #002222;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    max-width: 380px;
+    width: auto;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.about-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-right-side .right-side-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.about-right-side .right-side-body {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-right-side .right-side-header span {
+    color: var(--main-color);
+}
+
+.about-right-side .right-side-footer a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
