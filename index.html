@@ -12,6 +12,9 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="index.js"></script>
     <title>Thế Ngọc</title>
     <link rel="icon" href="favicon.ico">
@@ -25,10 +28,9 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Thông tin</a></li>
-                <li><a href="#">Kỹ năng</a></li>
-                <li><a href="#">Kinh nghiệm</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#about_section">Thông tin</a></li>
+                <li><a href="#skill_section">Kỹ năng</a></li>
+                <li><a href="#contact_section">Liên hệ</a></li>
             </ul>
             <div class="nav-icon" id="btnOpenMenu">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -50,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about_section">
         <div class="wrapper">
             <div class="about-header">
                 <div>About me</div>
@@ -70,6 +72,139 @@
                     </div>
                     <div class="right-side-footer">
                         <a href="#">Link to My CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill" id="skill_section">
+        <div class="wrapper">
+            <div class="skill-header">
+                <div>About my skill</div>
+                <div><span>what i know</span></div>
+            </div>
+            <div class="skill-content">
+                <div class="skill-left">
+                    <div class="skill-left-header">
+                        Kinh nghiệm làm việc
+                    </div>
+                    <div class="skill-left-body">
+                        <ul>
+                            <li>2/4 – 7/6/2020 : Xây dựng website bán điện thoại ASP.NET MVC.
+                            </li>
+                            <li>
+                                10/9 – 20/12/2020 : Xây dựng phần mềm quản lý erp order món nhà hàng .NET winform và ứng dụng hỗ trợ order món android.
+                            </li>
+                            <li>
+                                30/4 – 1/7/2021 : Xây dựng phần mềm quản lý tour du lịch erp trên nền tảng .NET winform.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-right">
+                    <div class="bar">
+                        <div class="bar-language">
+                            C#
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_net"></div>
+                        </div>
+                        <div class="bar-percent">
+                            70%
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-language">
+                            C
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_c"></div>
+                        </div>
+                        <div class="bar-percent">
+                            60%
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-language">
+                            Java Android
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_java"></div>
+                        </div>
+                        <div class="bar-percent">
+                            80%
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-language">
+                            HTML,CSS
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_html"></div>
+                        </div>
+                        <div class="bar-percent">
+                            80%
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-language">
+                            JavaScript
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_javascript"></div>
+                        </div>
+                        <div class="bar-percent">
+                            70%
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-language">
+                            SQL
+                        </div>
+                        <div class="bar-process">
+                            <div class="bar_sql"></div>
+                        </div>
+                        <div class="bar-percent">
+                            80%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact_section">
+        <div class="wrapper">
+            <div class="contact-header">
+                <div>My contact</div>
+                <div><span>contact me</span></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <div class="contact-line">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                        <span>23/09/2000</span>
+                    </div>
+                    <div class="contact-line">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>30/52 Đỗ Nhuận, P.Sơn Kỳ, Q.Tân Phú, TP.HCM</span>
+                    </div>
+                    <div class="contact-line">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>thengoc828@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-line">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <span>0338016618</span>
+                    </div>
+                    <div class="contact-line">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <span><a href="https://github.com/ngoc1397">https://github.com/ngoc1397</a></span>
+                    </div>
+                    <div class="contact-line">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <span><a href="https://www.facebook.com/thengoc.1397t/">https://www.facebook.com/thengoc.1397t/</a></span>
                     </div>
                 </div>
             </div>

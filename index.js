@@ -9,4 +9,8 @@ $(document).ready(function() {
     $('#btnOpenMenu').click(function() {
         $('.nav-menu').toggleClass('active')
     })
+    $('.navbar .nav-menu li a').click(function() {
+        $('html').css('scrollBehavior', 'smooth')
+        $('.nav-menu').toggleClass('active')
+    })
 })
