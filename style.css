@@ -507,4 +507,11 @@ body {
 .contact-line ion-icon {
     color: rgb(255, 0, 0);
     font-size: 1.2rem;
+    width: 40px;
+}
+
+.contact-line span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
